@@ -6,6 +6,7 @@ import {MdLocalHotel, MdMiscellaneousServices} from "react-icons/md";
 import {FaMapLocationDot} from "react-icons/fa6";
 import {BsFillImageFill} from "react-icons/bs";
 import {GrGallery} from "react-icons/gr";
+import {VscFeedback} from "react-icons/vsc";
 
 
 
@@ -106,6 +107,14 @@ const routesConfig = [
                         path: '/rooms-banner',
                     },
                 ]
+            },
+            {
+                id: 'feedback',
+                title: 'feedback',
+                messageId: 'sidebar.sample.feedback',
+                type: 'item',
+                icon: <VscFeedback/>,
+                path: '/feedback',
             },
             {
                 id: 'landmark',

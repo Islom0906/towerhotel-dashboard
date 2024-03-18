@@ -29,6 +29,7 @@ const Rooms = React.lazy(() => import('./Rooms'));
 const RoomsPostEdit = React.lazy(() => import('./Rooms/RoomsPostEdit'));
 const Service = React.lazy(() => import('./Service'));
 const ServicePostEdit = React.lazy(() => import('./Service/ServicePostEdit'));
+const Feedback = React.lazy(() => import('./Feedback'));
 
 
 export const samplePagesConfigs = [
@@ -166,5 +167,10 @@ export const samplePagesConfigs = [
     permittedRole: RoutePermittedRole.user,
     path: '/service/add',
     element: <ServicePostEdit/>,
+  },
+  {
+    permittedRole: RoutePermittedRole.user,
+    path: '/feedback',
+    element: <Feedback/>,
   },
 ];
