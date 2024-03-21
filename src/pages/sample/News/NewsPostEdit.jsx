@@ -481,7 +481,7 @@ const NewsPostEdit = () => {
 
 
                 <Button type="primary" htmlType="submit" style={{width: "100%", marginTop: "20px"}}>
-                    {editNewsSuccess ? 'Изменить продукт' : 'Создать продукт'}
+                    {editNewsSuccess ? 'Изменить' : 'Создать'}
                 </Button>
             </Form>}
     </div>);

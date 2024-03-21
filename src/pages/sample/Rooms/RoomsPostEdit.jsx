@@ -573,7 +573,7 @@ const RoomsPostEdit = () => {
                             rules={[{required: true, message: 'Требуется изображение'}]}>
                             <ImgCrop>
                                 <Upload
-                                    maxCount={3}
+                                    maxCount={4}
                                     fileList={fileListProps}
                                     listType='picture-card'
                                     onChange={onChangeImage}
@@ -581,19 +581,19 @@ const RoomsPostEdit = () => {
                                     onRemove={handleRemoveImage}
                                     beforeUpload={() => false}
                                 >
-                                    {fileListProps.length > 2 ? "" : "Upload"}
+                                    {fileListProps.length > 3 ? "" : "Upload"}
                                 </Upload>
                             </ImgCrop>
                         </Form.Item>
                     </Col>
                     <Col span={12}>
                         <Form.Item
-                            label='Основные фотографии'
+                            label='Галерея фотографии'
                             name={'gallery_image_ids'}
                             rules={[{required: true, message: 'Требуется изображение'}]}>
                             <ImgCrop>
                                 <Upload
-                                    maxCount={3}
+                                    maxCount={5}
                                     fileList={fileListPropsGallery}
                                     listType='picture-card'
                                     onChange={onChangeGalleryImage}
@@ -601,7 +601,7 @@ const RoomsPostEdit = () => {
                                     onRemove={handleRemoveGalleryImage}
                                     beforeUpload={() => false}
                                 >
-                                    {fileListPropsGallery.length > 2 ? "" : "Upload"}
+                                    {fileListPropsGallery.length > 4 ? "" : "Upload"}
                                 </Upload>
                             </ImgCrop>
                         </Form.Item>
@@ -614,7 +614,7 @@ const RoomsPostEdit = () => {
 
 
                 <Button type="primary" htmlType="submit" style={{width: "100%", marginTop: "20px"}}>
-                    {editRoomsSuccess ? 'Изменить продукт' : 'Создать продукт'}
+                    {editRoomsSuccess ? 'Изменить' : 'Создать'}
                 </Button>
             </Form>}
     </div>);

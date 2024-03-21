@@ -413,7 +413,7 @@ const AboutInfoPostEdit = () => {
 
 
                 <Button type="primary" htmlType="submit" style={{width: "100%", marginTop: "20px"}}>
-                    {editAboutInfoSuccess ? 'Изменить продукт' : 'Создать продукт'}
+                    {editAboutInfoSuccess ? 'Изменить' : 'Создать'}
                 </Button>
             </Form>}
     </div>);

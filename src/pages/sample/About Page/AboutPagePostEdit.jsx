@@ -413,7 +413,7 @@ const AboutPagePostEdit = () => {
 
 
                 <Button type="primary" htmlType="submit" style={{width: "100%", marginTop: "20px"}}>
-                    {editAboutPageSuccess ? 'Изменить продукт' : 'Создать продукт'}
+                    {editAboutPageSuccess ? 'Изменить' : 'Создать'}
                 </Button>
             </Form>}
     </div>);

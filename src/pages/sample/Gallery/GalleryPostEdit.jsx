@@ -439,7 +439,7 @@ const GalleryPostEdit = () => {
 
 
                 <Button type="primary" htmlType="submit" style={{width: "100%", marginTop: "20px"}}>
-                    {editGallerySuccess ? 'Изменить продукт' : 'Создать продукт'}
+                    {editGallerySuccess ? 'Изменить' : 'Создать'}
                 </Button>
             </Form>}
     </div>);

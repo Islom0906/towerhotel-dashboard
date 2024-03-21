@@ -388,7 +388,7 @@ const ServicePostEdit = () => {
                             rules={[{required: true, message: 'Требуется изображение'}]}>
                             <ImgCrop>
                                 <Upload
-                                    maxCount={3}
+                                    maxCount={4}
                                     fileList={fileListProps}
                                     listType='picture-card'
                                     onChange={onChangeImage}
@@ -396,19 +396,14 @@ const ServicePostEdit = () => {
                                     onRemove={handleRemoveImage}
                                     beforeUpload={() => false}
                                 >
-                                    {fileListProps.length > 2 ? "" : "Upload"}
+                                    {fileListProps.length > 3 ? "" : "Upload"}
                                 </Upload>
                             </ImgCrop>
                         </Form.Item>
                     </Col>
                 </Row>
-
-
-
-
-
                 <Button type="primary" htmlType="submit" style={{width: "100%", marginTop: "20px"}}>
-                    {editServiceSuccess ? 'Изменить продукт' : 'Создать продукт'}
+                    {editServiceSuccess ? 'Изменить' : 'Создать'}
                 </Button>
             </Form>}
     </div>);

@@ -459,7 +459,7 @@ const LandmarkPostEdit = () => {
 
 
                 <Button type="primary" htmlType="submit" style={{width: "100%", marginTop: "20px"}}>
-                    {editLandmarkSuccess ? 'Изменить продукт' : 'Создать продукт'}
+                    {editLandmarkSuccess ? 'Изменить' : 'Создать'}
                 </Button>
             </Form>}
     </div>);
