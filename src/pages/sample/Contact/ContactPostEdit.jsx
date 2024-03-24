@@ -322,7 +322,7 @@ const ContactPostEdit = () => {
                     <Row gutter={20}>
                         <Col span={24}>
                             <Form.Item
-                                label="Youtube"
+                                label="Telegram"
                                 name="youtube"
                                 rules={[{required: true, message: 'Требуется ссылка на Ютуб'}]}
                             >
